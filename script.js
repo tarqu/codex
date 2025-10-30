@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const assistantSuggestions = document.querySelectorAll('.assistant-suggestions button');
 
   /* Navigasyon */
-  if (navToggle) {
+  if (navToggle && navLinks) {
     navToggle.addEventListener('click', () => {
       navLinks.classList.toggle('open');
       const expanded = navToggle.getAttribute('aria-expanded') === 'true';
@@ -269,9 +269,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* Nav scroll highlight */
   const sections = document.querySelectorAll('section[id]');
-  const navAnchors = document.querySelectorAll('.nav-links a');
+  const navAnchors = Array.from(document.querySelectorAll('.nav-links a'))
+    .filter(link => (link.getAttribute('href') || '').startsWith('#'));
 
   const highlightNav = () => {
+    if (!navAnchors.length || !sections.length) {
+      return;
+    }
     const fromTop = window.scrollY + 120;
     let activeId = '';
     sections.forEach(section => {
@@ -285,6 +289,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  highlightNav();
-  window.addEventListener('scroll', highlightNav);
+  if (navAnchors.length) {
+    highlightNav();
+    window.addEventListener('scroll', highlightNav);
+  }
 });

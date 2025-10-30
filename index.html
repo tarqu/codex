@@ -12,20 +12,20 @@
 <body>
   <header class="navbar" id="top">
     <div class="container nav-wrapper">
-      <div class="brand">Semih Bayındır</div>
+      <a class="brand" href="index.html">Semih Bayındır</a>
       <nav class="nav-links" aria-label="Ana menü">
-        <a href="#uzmanlik">Uzmanlık</a>
-        <a href="#sonuclar">Sonuçlar</a>
-        <a href="#hizmetler">Hizmetler</a>
-        <a href="#vaka">Vaka Çalışmaları</a>
-        <a href="#iletisim">İletişim</a>
+        <a href="index.html" aria-current="page">Ana Sayfa</a>
+        <a href="uzmanlik.html">Uzmanlık</a>
+        <a href="hizmetler.html">Hizmetler</a>
+        <a href="vaka-calismalari.html">Vaka Çalışmaları</a>
+        <a href="iletisim.html">İletişim</a>
       </nav>
       <button class="nav-toggle" aria-label="Menüyü aç/kapat">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <a class="cta" href="#danismanlik">Strateji Seansı Al</a>
+      <a class="cta" href="iletisim.html#danismanlik">Strateji Seansı Al</a>
     </div>
   </header>
 
@@ -112,21 +112,86 @@
         </div>
         <ul class="credibility-list">
           <li>
-            <span class="icon">⚡</span>
+            <div class="icon-badge" aria-hidden="true">
+              <svg class="icon">
+                <use href="icons.svg#icon-bolt"></use>
+              </svg>
+            </div>
             <strong>Anlık optimizasyonlar</strong>
             <p>Yapay zekâ ile çalışan teklif stratejileriyle kampanyalarınızı anlık olarak güncelliyorum.</p>
           </li>
           <li>
-            <span class="icon">🎯</span>
+            <div class="icon-badge" aria-hidden="true">
+              <svg class="icon">
+                <use href="icons.svg#icon-target"></use>
+              </svg>
+            </div>
             <strong>Hedef kitle modelleme</strong>
             <p>Meta CAPI ve Google GA4 verilerini birleştirerek mikro hedeflemeler oluşturuyorum.</p>
           </li>
           <li>
-            <span class="icon">📊</span>
+            <div class="icon-badge" aria-hidden="true">
+              <svg class="icon">
+                <use href="icons.svg#icon-analytics"></use>
+              </svg>
+            </div>
             <strong>Tek ekrandan raporlama</strong>
             <p>Reklam yatırımlarınızı gerçek zamanlı olarak takip edebileceğiniz özelleştirilmiş paneller.</p>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="framework" id="strateji">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Semih Bayındır Büyüme Çerçevesi</h2>
+          <p>Performans pazarlaması süreçleriniz strateji, otomasyon ve yaratıcı deneylerle güçlenir.</p>
+        </div>
+        <div class="framework-grid">
+          <article class="framework-card">
+            <div class="icon-badge" aria-hidden="true">
+              <svg class="icon">
+                <use href="icons.svg#icon-compass"></use>
+              </svg>
+            </div>
+            <h3>Strateji Sprinti</h3>
+            <p>Markanızın hedefleri ve veri yetkinliği doğrultusunda ilk 14 günde yol haritası çıkarırım.</p>
+            <ul>
+              <li>Full-funnel fırsat analizi ve kitle segmentasyonu</li>
+              <li>Rakip reklam kopyası & kreatif benchmarkı</li>
+              <li>90 günlük kanal ve bütçe tahsis modeli</li>
+            </ul>
+          </article>
+          <article class="framework-card">
+            <div class="icon-badge" aria-hidden="true">
+              <svg class="icon">
+                <use href="icons.svg#icon-automation"></use>
+              </svg>
+            </div>
+            <h3>Otomasyon Omurgası</h3>
+            <p>Yapay zekâ destekli otomasyon katmanlarıyla ekiplerinizin verimliliğini artırırım.</p>
+            <ul>
+              <li>Meta CAPI, GA4 ve CRM veri akışlarının senkronizasyonu</li>
+              <li>Kurallara bağlı teklif & bütçe optimizasyonları</li>
+              <li>Gerçek zamanlı uyarı ve raporlama panelleri</li>
+            </ul>
+          </article>
+          <article class="framework-card">
+            <div class="icon-badge" aria-hidden="true">
+              <svg class="icon">
+                <use href="icons.svg#icon-lab"></use>
+              </svg>
+            </div>
+            <h3>Kreatif Deney Lab</h3>
+            <p>Deneysel yaratıcı testlerle dönüşüm oranlarını her iterasyonda %10+ iyileştiririm.</p>
+            <ul>
+              <li>AI destekli video ve görsel varyasyon üretimi</li>
+              <li>Mikro-mesaj testleri ve kazan-koru-ölçekle döngüsü</li>
+              <li>Öğrenimleri Notion tabanlı içerik kitaplığına işlerim</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -212,7 +277,11 @@
         </div>
         <div class="service-grid">
           <article class="service-card" tabindex="0">
-            <div class="service-icon">🚀</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg class="icon">
+                <use href="icons.svg#icon-rocket"></use>
+              </svg>
+            </div>
             <h3>Büyüme Sprinti</h3>
             <p>Hızlı test kültürü ile pazarlama hunisinin her aşamasında optimizasyon.</p>
             <ul>
@@ -223,7 +292,11 @@
             <button class="service-cta" data-service="Büyüme Sprinti">Detaylı Plan Al</button>
           </article>
           <article class="service-card" tabindex="0">
-            <div class="service-icon">🎯</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg class="icon">
+                <use href="icons.svg#icon-target"></use>
+              </svg>
+            </div>
             <h3>Dönüşüm Motoru</h3>
             <p>Satın alma yolculuğunu izleyip, mikro hedeflemeler oluşturuyorum.</p>
             <ul>
@@ -234,7 +307,11 @@
             <button class="service-cta" data-service="Dönüşüm Motoru">Demo Rapor Talep Et</button>
           </article>
           <article class="service-card" tabindex="0">
-            <div class="service-icon">🤖</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg class="icon">
+                <use href="icons.svg#icon-brain"></use>
+              </svg>
+            </div>
             <h3>AI Reklam Stüdyosu</h3>
             <p>Yaratıcı içerik üretimini ve kampanya optimizasyonunu otomatikleştiriyorum.</p>
             <ul>
@@ -444,10 +521,10 @@
       <div>
         <h4>Hızlı Linkler</h4>
         <ul>
-          <li><a href="#uzmanlik">Uzmanlık</a></li>
-          <li><a href="#sonuclar">Sonuçlar</a></li>
-          <li><a href="#hizmetler">Hizmetler</a></li>
-          <li><a href="#danismanlik">Danışmanlık</a></li>
+          <li><a href="index.html#uzmanlik">Uzmanlık</a></li>
+          <li><a href="index.html#sonuclar">Sonuçlar</a></li>
+          <li><a href="hizmetler.html">Hizmetler</a></li>
+          <li><a href="iletisim.html#danismanlik">Danışmanlık</a></li>
         </ul>
       </div>
       <div>
@@ -464,7 +541,11 @@
 
   <div class="assistant">
     <button class="assistant-toggle" aria-expanded="false">
-      <span class="assistant-avatar">🤖</span>
+      <span class="assistant-avatar" aria-hidden="true">
+        <svg class="icon">
+          <use href="icons.svg#icon-bot"></use>
+        </svg>
+      </span>
       <span>Semih AI</span>
     </button>
     <div class="assistant-panel" hidden>
