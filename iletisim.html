@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim | Semih Bayındır Dijital Pazarlama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page">
+  <header class="navbar" id="top">
+    <div class="container nav-wrapper">
+      <a class="brand" href="index.html">Semih Bayındır</a>
+      <nav class="nav-links" aria-label="Ana menü">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="uzmanlik.html">Uzmanlık</a>
+        <a href="hizmetler.html">Hizmetler</a>
+        <a href="vaka-calismalari.html">Vaka Çalışmaları</a>
+        <a href="iletisim.html" aria-current="page">İletişim</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menüyü aç/kapat">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="cta" href="#danismanlik">Strateji Seansı Al</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero--contact">
+      <div class="container page-hero-grid">
+        <div class="page-hero-content">
+          <p class="page-eyebrow">İletişim</p>
+          <h1>Hedeflerinizi konuşalım, büyüme planınızı kuralım</h1>
+          <p>İhtiyaçlarınızı paylaşın; 48 saat içinde sizinle özel strateji önerileri ve yol haritası paylaşıyorum.</p>
+          <div class="page-hero-actions">
+            <a class="primary" href="#danismanlik">Strateji Seansı Planla</a>
+            <a class="ghost" href="mailto:merhaba@semihbayindir.com">E-posta Gönder</a>
+          </div>
+          <ul class="contact-info">
+            <li>
+              <div class="icon-badge" aria-hidden="true">
+                <svg class="icon">
+                  <use href="icons.svg#icon-mail"></use>
+                </svg>
+              </div>
+              <div>
+                <strong>E-posta</strong>
+                <a href="mailto:merhaba@semihbayindir.com">merhaba@semihbayindir.com</a>
+              </div>
+            </li>
+            <li>
+              <div class="icon-badge" aria-hidden="true">
+                <svg class="icon">
+                  <use href="icons.svg#icon-chat"></use>
+                </svg>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/905551112233" target="_blank" rel="noopener">+90 555 111 22 33</a>
+              </div>
+            </li>
+            <li>
+              <div class="icon-badge" aria-hidden="true">
+                <svg class="icon">
+                  <use href="icons.svg#icon-calendar"></use>
+                </svg>
+              </div>
+              <div>
+                <strong>Çalışma Saatleri</strong>
+                <span>Hafta içi 09:00 - 18:00</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <aside class="page-hero-panel" aria-label="İletişim notu">
+          <div class="panel-card">
+            <header>
+              <span>Danışmanlık Hatırlatması</span>
+              <div class="badge-soft">48 saat</div>
+            </header>
+            <p>Toplantı öncesi paylaştığınız dashboard ve rapor linklerini analiz edip görüşmeye hazır geliyorum.</p>
+            <ul class="panel-stats">
+              <li>
+                <strong>Ön analiz</strong>
+                <span>Performans metriği denetimi</span>
+              </li>
+              <li>
+                <strong>Workshop</strong>
+                <span>90 dakikalık interaktif oturum</span>
+              </li>
+              <li>
+                <strong>Yol haritası</strong>
+                <span>14 günlük aksiyon planı</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="contact-form" id="danismanlik">
+      <div class="container planner-grid">
+        <form class="consult-form" id="consultForm">
+          <h3>Ücretsiz strateji seansı talep edin</h3>
+          <div class="form-group">
+            <label for="name">İsim Soyisim</label>
+            <input id="name" name="name" required placeholder="Adınız">
+          </div>
+          <div class="form-group">
+            <label for="email">E-posta</label>
+            <input id="email" name="email" type="email" required placeholder="ornek@marka.com">
+          </div>
+          <div class="form-group">
+            <label for="goal">Hedefiniz</label>
+            <textarea id="goal" name="goal" rows="3" placeholder="Büyütmek istediğiniz ürün, hedef KPI, zamanlama..."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="platform">Odak Kanal</label>
+            <select id="platform" name="platform">
+              <option value="Meta">Meta Reklamları</option>
+              <option value="Google">Google Ads</option>
+              <option value="Both">Meta & Google</option>
+            </select>
+          </div>
+          <button type="submit" class="primary full">Talebimi Gönder</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+        <div>
+          <h2>Bütçe simülatörü</h2>
+          <p>Aylık medya bütçenize göre potansiyel ROAS ve gelir tahmini.</p>
+          <div class="slider-group">
+            <label for="budgetRange">Aylık reklam bütçesi</label>
+            <div class="slider-input">
+              <input type="range" id="budgetRange" min="25000" max="350000" step="5000" value="150000">
+              <output id="budgetValue">₺ 150.000</output>
+            </div>
+          </div>
+          <div class="planner-results">
+            <div>
+              <span>Beklenen ROAS</span>
+              <strong id="plannerRoas">0x</strong>
+            </div>
+            <div>
+              <span>Tahmini gelir</span>
+              <strong id="plannerRevenue">₺0</strong>
+            </div>
+            <div>
+              <span>Aylık potansiyel lead</span>
+              <strong id="plannerLeads">0</strong>
+            </div>
+          </div>
+          <p class="planner-note">Tahminler önceki projelerden elde edilen ortalama sonuçlara dayanır. Nihai performans, ürün/pazar uyumu ve kreatif kalitesine göre değişir.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Semih Bayındır</h3>
+        <p>Meta & Google Ads uzmanı, performans odaklı büyüme danışmanı.</p>
+        <div class="footer-contact">
+          <a href="mailto:merhaba@semihbayindir.com">merhaba@semihbayindir.com</a>
+          <a href="tel:+905551112233">+90 555 111 22 33</a>
+        </div>
+      </div>
+      <div>
+        <h4>Hızlı Linkler</h4>
+        <ul>
+          <li><a href="index.html#uzmanlik">Uzmanlık</a></li>
+          <li><a href="hizmetler.html">Hizmetler</a></li>
+          <li><a href="vaka-calismalari.html">Vaka Çalışmaları</a></li>
+          <li><a href="iletisim.html#danismanlik">Danışmanlık</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sosyal</h4>
+        <ul>
+          <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Semih Bayındır. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <div class="assistant">
+    <button class="assistant-toggle" aria-expanded="false">
+      <span class="assistant-avatar" aria-hidden="true">
+        <svg class="icon">
+          <use href="icons.svg#icon-bot"></use>
+        </svg>
+      </span>
+      <span>Semih AI</span>
+    </button>
+    <div class="assistant-panel" hidden>
+      <div class="assistant-header">
+        <h3>Semih AI Asistanı</h3>
+        <p>Stratejinizi birlikte tasarlayalım.</p>
+      </div>
+      <div class="assistant-body">
+        <div class="assistant-suggestions">
+          <button data-question="Meta kampanyalarım neden dönüşüm getirmiyor?">Meta kampanyalarım neden dönüşüm getirmiyor?</button>
+          <button data-question="Google Ads'de bütçemi nasıl dağıtmalıyım?">Google Ads'de bütçemi nasıl dağıtmalıyım?</button>
+          <button data-question="Hangi metriğe odaklanmalıyım?">Hangi metriğe odaklanmalıyım?</button>
+        </div>
+        <div class="assistant-chat" role="log" aria-live="polite"></div>
+      </div>
+      <form class="assistant-form" id="assistantForm">
+        <label for="assistantInput" class="sr-only">Sorunuz</label>
+        <input id="assistantInput" name="assistantInput" placeholder="Sorunuzu yazın...">
+        <button type="submit">Gönder</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
